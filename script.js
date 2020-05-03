@@ -104,6 +104,14 @@ function search() {
 
       }
     }
+	markers.map(({marker, result}) => {
+      google.maps.event.addListener(marker, 'click', function () {
+        infoWindow.setContent('<div><strong>' + result.name + '</strong><br>'+
+                result.vicinity + '</div>');
+         
+          infoWindow.open(map, this);
+      });
+    })
   }
 
   function movieTheaterCallback(results, status) {
@@ -121,10 +129,10 @@ function search() {
     }
     markers.map(({marker, result}) => {
       google.maps.event.addListener(marker, 'click', function () {
-        infowindow1.setContent('<div><strong>' + place.name + '</strong><br>'+
-                place1.formatted_address + '</div>');
+        infoWindow.setContent('<div><strong>' + result.name + '</strong><br>'+
+                result.vicinity + '</div>');
          
-          infowindow1.open(map, this);
+          infoWindow.open(map, this);
       });
     })
 
