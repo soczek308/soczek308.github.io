@@ -1,1 +1,0 @@
-# soczek308.github.io
