@@ -95,7 +95,7 @@ function search() {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
       for (let i = 0; i < 2; i++) {
         console.log('restaurants', results[i])
-        placesDivEl.innerHTML += `<p>Kino: ${results[i].name} ${results[i].vicinity}</p>`
+        placesDivEl.innerHTML += `<p>Restaurant: ${results[i].name} ${results[i].vicinity}</p>`
         const marker = new google.maps.Marker({
           position: results[i].geometry.location,
         });
@@ -110,7 +110,7 @@ function search() {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
       for (let i = 0; i < 2; i++) {
         console.log('cinemas', results[i])
-        placesDivEl.innerHTML += `<p>Restaracja: ${results[i].name} ${results[i].vicinity}</p>`
+        placesDivEl.innerHTML += `<p>Cinema: ${results[i].name} ${results[i].vicinity}</p>`
         const marker = new google.maps.Marker({
           position: results[i].geometry.location,
         });
@@ -121,8 +121,7 @@ function search() {
     }
     markers.map(({marker, result}) => {
       google.maps.event.addListener(marker, 'click', function () {
-        infowindow1.setContent('<div><strong>' + place.name + '</strong><br>' +
-                'Place ID: ' + place.place_id + '<br>' +
+        infowindow1.setContent('<div><strong>' + place.name + '</strong><br>'+
                 place1.formatted_address + '</div>');
          
           infowindow1.open(map, this);
