@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>GoOUT</title>
+
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsSKN5UY2Cq8UE4jgwcKb-GT29cSdqkwM&libraries=places" async defer></script>
+
+	<head>
+<body>
+	<div id="loginPage">
+		<p>Please provide your name in to schedule ur meetings!</p>
+		<input id="username" type="text" placeholder="Username"/>
+		
+		<button type="button" id="loginBtn">Login</button>
+	</div>
+<div id="site">
+	<div id="title">GoOUT</div>
+	<div id="description"><b>Plan your evening!</b><br>Click the button below to find the best restaurant and cinema near you</div>
+	<div id="search" onclick="search()">Go OUT!</div>
+	<div id="showplaces">
+		<div id="map"></div>
+		<div id="map1"></div>
+	</div>
+	
+	<div id="places">
+
+	</div>
+	<div id="meetingMark">
+		<p>Please give us your rating on your meeting!</p>
+		<select id="ratingSelect">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<button type="button" id="ratingBtn">Submit rating</button>
+	</div>
+	<div id="photos">
+		<p>If you want, you can also add some photos from ur meetings!</p>
+		<input type="file" id="photosInput" name="filename" accept="image/*">
+	</div>
+</div>
+	<script src="script.js"></script>
+</body>
+</html>

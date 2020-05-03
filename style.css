@@ -1,0 +1,95 @@
+body
+{
+ background-color: #000033;
+ color: #FFFFFF;
+}
+
+#loginPage {
+	display: flex;
+	align-items: center;
+	flex-flow: column nowrap;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	-moz-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0);
+}
+
+#loginPage input {
+	max-width: 120px;
+	margin: 10px 0;
+}
+
+#meetingMark {
+	margin: 50px 0;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+#meetingMark button {
+	margin-top: 20px;
+}
+
+#photos {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+#site
+{
+	display: none;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#title
+{
+	width:100%;
+	margin-top: 50px;
+	text-align: center;
+	font-size: 56px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#description
+{
+	margin-left:auto;
+	margin-right:auto;
+	Font-size:32px;
+	text-align: center;
+}
+
+#search
+{
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	font-size: 32px;
+	border:3px solid white;
+	cursor: pointer;
+	border-radius: 15px;
+	margin-top: 20px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#showplaces
+{
+	width:90%;
+	height: 500px;
+	margin-top: 20px;
+	margin-left:auto;
+	margin-right:auto;
+	border:1px solid white;
+}
+
+#map
+{
+	height: 100%;
+	color: black;
+}
+
+
